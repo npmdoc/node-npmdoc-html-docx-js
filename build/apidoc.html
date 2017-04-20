@@ -49,8 +49,6 @@
 <h1>api documentation for
     <a
 
-        href="https://github.com/evidenceprime/html-docx-js#readme"
-
     >html-docx-js (v0.3.1)</a>
 </h1>
 <h4>Converts HTML documents to DOCX in the browser</h4>
@@ -72,19 +70,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.html-docx-js.asBlob">module html-docx-js.asBlob</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.html-docx-js.asBlob.asBlob">
-            function <span class="apidocSignatureSpan">html-docx-js.</span>asBlob
-            <span class="apidocSignatureSpan">(html, options)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -93,45 +78,6 @@
 
     <h2>
         <a href="#apidoc.element.html-docx-js.asBlob" id="apidoc.element.html-docx-js.asBlob">
-        function <span class="apidocSignatureSpan">html-docx-js.</span>asBlob
-        <span class="apidocSignatureSpan">(html, options)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">asBlob = function (html, options) {
-  var zip;
-  zip = new JSZip();
-  internal.addFiles(zip, html, options);
-  return internal.generateDocument(zip);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-You can also find a sample for using it in Node.js environment
-[here](https://github.com/evidenceprime/html-docx-js-node-sample).
-
-To generate DOCX, simply pass a HTML document (as string) to `asBlob` method to receive `Blob` (or `Buffer`)
-containing the output file.
-
-  var converted = htmlDocx.<span class="apidocCodeKeywordSpan">asBlob</span>(content);
-  saveAs(converted, &#x27;test.docx&#x27;);
-
-`asBlob` can take additional options for controlling page setup for the document:
-
-* `orientation`: `landscape` or `portrait` (default)
-* `margins`: map of margin sizes (expressed in twentieths of point, see
-[WordprocessingML documentation](http://officeopenxml.com/WPsectionPgMar.php) for details):
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.html-docx-js.asBlob" id="apidoc.module.html-docx-js.asBlob">module html-docx-js.asBlob</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.html-docx-js.asBlob.asBlob" id="apidoc.element.html-docx-js.asBlob.asBlob">
         function <span class="apidocSignatureSpan">html-docx-js.</span>asBlob
         <span class="apidocSignatureSpan">(html, options)</span>
         </a>
