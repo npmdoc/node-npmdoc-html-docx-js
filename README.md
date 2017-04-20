@@ -1,4 +1,7 @@
-# api documentation for  [html-docx-js (v0.3.1)](https://github.com/evidenceprime/html-docx-js#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-html-docx-js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-html-docx-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-html-docx-js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-html-docx-js)
+# npmdoc-html-docx-js
+
+#### api documentation for  html-docx-js (v0.3.1)  [![npm package](https://img.shields.io/npm/v/npmdoc-html-docx-js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-html-docx-js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-html-docx-js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-html-docx-js)
+
 #### Converts HTML documents to DOCX in the browser
 
 [![NPM](https://nodei.co/npm/html-docx-js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/html-docx-js)
@@ -18,8 +21,17 @@
 ```json
 
 {
-    "author": {
-        "name": "Artur Nowak"
+    "name": "html-docx-js",
+    "version": "0.3.1",
+    "description": "Converts HTML documents to DOCX in the browser",
+    "main": "build/api.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/evidenceprime/html-docx-js.git"
+    },
+    "scripts": {
+        "test": "gulp test-node",
+        "prepublish": "gulp clean; gulp build-node"
     },
     "browserify": {
         "transform": [
@@ -27,20 +39,13 @@
             "brfs"
         ]
     },
-    "bugs": {
-        "url": "https://github.com/evidenceprime/html-docx-js/issues"
-    },
+    "author": "Artur Nowak <artur.nowak@evidenceprime.com>",
     "contributors": [
         {
             "name": "Ievgen Martynov"
         }
     ],
-    "dependencies": {
-        "jszip": "^2.3.0",
-        "lodash.escape": "^3.0.0",
-        "lodash.merge": "^3.2.0"
-    },
-    "description": "Converts HTML documents to DOCX in the browser",
+    "license": "MIT",
     "devDependencies": {
         "brfs": "^1.1.2",
         "browserify": "^4.2.0",
@@ -62,31 +67,11 @@
         "vinyl-source-stream": "^0.1.1",
         "watchify": "^0.10.2"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "9713f6587a08d1f0c87a801fe7649a4d0ab07d76",
-        "tarball": "https://registry.npmjs.org/html-docx-js/-/html-docx-js-0.3.1.tgz"
-    },
-    "gitHead": "68f2235b2948419f1407e9b7788973715acf5d08",
-    "homepage": "https://github.com/evidenceprime/html-docx-js#readme",
-    "license": "MIT",
-    "main": "build/api.js",
-    "maintainers": [
-        {
-            "name": "anowak"
-        }
-    ],
-    "name": "html-docx-js",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/evidenceprime/html-docx-js.git"
-    },
-    "scripts": {
-        "prepublish": "gulp clean; gulp build-node",
-        "test": "gulp test-node"
-    },
-    "version": "0.3.1"
+    "dependencies": {
+        "jszip": "^2.3.0",
+        "lodash.escape": "^3.0.0",
+        "lodash.merge": "^3.2.0"
+    }
 }
 ```
 
